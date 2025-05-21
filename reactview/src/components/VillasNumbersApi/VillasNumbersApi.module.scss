@@ -1,0 +1,82 @@
+@import "../../scss/variables";
+
+.container {
+  width: $container-width;
+  margin-block: 50px;
+  margin-inline: auto;
+  border: 2px solid $vc-main-border-color;
+  border-radius: 2px;
+  padding: 10px 20px 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blueText {
+  color: $accent-text-color;
+  margin-block: 10px;
+}
+
+.createVillaNumber {
+  display: block;
+  background: none;
+  border: 2px solid #109b27;
+  border-radius: 5px;
+  color: #109b27;;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.createVillaNumber:hover {
+  background: $accent-text-color;
+  color: white;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: 1px solid #000;
+  padding-block: 10px;
+}
+
+td {
+  border-bottom: 1px solid $header-bg-color;
+  padding-block: 10px;
+}
+
+.controlBtn {
+  border: none;
+  border-radius: 4px;
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background-color: $api-button-red;
+}
+
+.editBtn {
+  background-color: $api-button-green;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  transition: all 0.3s ease;
+}
+
+button:hover .icon {
+  transform: scale(1.1);
+}

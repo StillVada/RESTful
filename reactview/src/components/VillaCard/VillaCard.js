@@ -1,0 +1,11 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("react/jsx-runtime");
+const VillaCard_module_css_1 = __importDefault(require("./VillaCard.module.css"));
+const VillaCard = ({ name, details, rate, occupancy, sqft, imageUrl, amenity = "", }) => {
+    return ((0, jsx_runtime_1.jsxs)("div", { className: VillaCard_module_css_1.default.villaCard, children: [(0, jsx_runtime_1.jsx)("div", { children: (0, jsx_runtime_1.jsx)("img", { src: imageUrl, className: VillaCard_module_css_1.default.img }) }), (0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)("h2", { className: VillaCard_module_css_1.default.name, children: name }), details && (0, jsx_runtime_1.jsx)("p", { className: VillaCard_module_css_1.default.description, children: details }), (0, jsx_runtime_1.jsxs)("div", { className: VillaCard_module_css_1.default.infoBlock, children: [sqft && ((0, jsx_runtime_1.jsxs)("p", { className: VillaCard_module_css_1.default.description, children: [(0, jsx_runtime_1.jsx)("span", { className: VillaCard_module_css_1.default.info, children: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C:" }), " ", sqft, " \u043C", (0, jsx_runtime_1.jsx)("sup", { className: VillaCard_module_css_1.default.sup, children: "2" })] })), occupancy && occupancy > 0 && ((0, jsx_runtime_1.jsxs)("p", { className: VillaCard_module_css_1.default.description, children: [(0, jsx_runtime_1.jsx)("span", { className: VillaCard_module_css_1.default.info, children: "\u0412\u043C\u0435\u0441\u0442\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C: " }), occupancy != 1 ? "до" : "", " ", occupancy, " \u0447\u0435\u043B\u043E\u0432\u0435\u043A"] }))] }), amenity != "" && ((0, jsx_runtime_1.jsxs)("p", { className: VillaCard_module_css_1.default.description, children: [(0, jsx_runtime_1.jsx)("span", { className: VillaCard_module_css_1.default.info, children: "\u0423\u0434\u043E\u0431\u0441\u0442\u0432\u0430:" }), " ", amenity] })), (0, jsx_runtime_1.jsxs)("h3", { className: VillaCard_module_css_1.default.price, children: [rate, " \u0440"] })] })] }));
+};
+exports.default = VillaCard;

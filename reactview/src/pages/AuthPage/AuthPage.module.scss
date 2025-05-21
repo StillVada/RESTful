@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    background-image: none;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+}

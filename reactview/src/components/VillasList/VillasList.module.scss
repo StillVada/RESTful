@@ -1,0 +1,12 @@
+@import "../../scss/variables";
+
+.villasList {
+  box-sizing: border-box;
+  margin-inline: auto;
+  padding-top: 50px;
+  margin-bottom: 100px;
+  width: $container-width;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

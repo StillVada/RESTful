@@ -1,0 +1,108 @@
+@import "../../scss/variables";
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bigLabel {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: $text-color;
+  font-weight: 600;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 0;
+  border: none;
+  border-bottom: 2px solid $vc-main-border-color;
+  font-size: 1rem;
+  color: $text-color;
+  background: transparent;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-text-color;
+  }
+
+  &::placeholder {
+    color: $header-gray-color;
+    opacity: 1;
+  }
+}
+
+.label {
+  text-align: center;
+  font-size: 0.875rem;
+  color: $header-gray-color;
+}
+
+.error {
+  position: absolute;
+  bottom: -1.25rem;
+  left: 0;
+  color: $api-button-red;
+  font-size: 0.75rem;
+}
+
+.registrationLabel {
+  color: $registration-label-color;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $primary-accent-hover;
+    text-decoration: underline;
+  }
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: $reg-button-background-color;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+
+  &:hover {
+    background-color: $reg-hover-button-background-color;
+  }
+
+  &:active {
+    background-color: $reg-active-button-background-color;
+    transform: translateY(1px);
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+  
+  .bigLabel {
+    font-size: 1.5rem;
+  }
+}

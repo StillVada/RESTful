@@ -1,0 +1,80 @@
+.container {
+  width: 1000px;
+  margin-block: 50px;
+  margin-inline: auto;
+  border: 2px solid #ebebeb;
+  border-radius: 2px;
+  padding: 10px 20px 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blueText {
+  color: #000000;
+  margin-block: 10px;
+}
+
+.createVilla {
+  display: block;
+  background: none;
+  border: 2px solid #109b27;
+  border-radius: 5px;
+  color: #109b27;;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.createVilla:hover {
+  background: #109b27;;
+  color: white;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: 1px solid #000;
+  padding-block: 10px;
+}
+
+td {
+  border-bottom: 1px solid #f8f7f7;
+  padding-block: 10px;
+}
+
+.controlBtn {
+  border: none;
+  border-radius: 4px;
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background-color: #dd3546;
+}
+
+.editBtn {
+  background-color: #47906c;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  transition: all 0.3s ease;
+}
+
+button:hover .icon {
+  transform: scale(1.1);
+}
